@@ -1,0 +1,89 @@
+baseURL = "https://neurips-gazua.github.io/"
+languageCode = "ko-kr"
+title = "LLM Knowledge Archive"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  ShowToc = true
+  TocOpen = true
+  ShowLastMod = true
+  ShowDateUpdated = true
+  ShowDate = true
+  ShowAuthor = true
+  ShowSummary = true
+  ShowFullTextinRSS = true
+
+[params.homeInfoParams]
+  Title = '<img src="/dino-32x32.png" alt="dino" style="display:inline; vertical-align:middle; margin-right:8px; width:48px; height:48px;"> Welcome to LLM Knowledge Archive'
+  Content = "We are a research team studying large language models, reading papers and researching the latest trends since 2024."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/neurips-gazua"
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[params.label]
+  text = "LLM Knowledge"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
+
+[params.assets]
+  favicon = "/dino.ico"
+  favicon16x16 = "/dino-16x16.png"
+  favicon32x32 = "/dino-32x32.png"
+  apple_touch_icon = "/dino-appletouch.png"
+  safari_pinned_tab = "/dino.ico"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
+  [[menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
