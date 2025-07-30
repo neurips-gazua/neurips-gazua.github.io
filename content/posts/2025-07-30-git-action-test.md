@@ -1,4 +1,11 @@
 +++
+date = '2025-07-30T15:53:07+09:00'
+draft = false
+title = 'GitHub Actions 자동 배포 시스템 테스트'
+description = 'LLM Knowledge Archive 블로그의 자동 배포 시스템을 테스트해보았습니다.'
+tags = ['test', 'github-actions', 'automation']
+categories = ['general']
++++
 
 # GitHub Actions 자동 배포 시스템 테스트
 
@@ -25,10 +32,4 @@
 이 포스트가 성공적으로 배포되면, 우리의 자동화 시스템이 완벽하게 작동한다는 것을 의미합니다!
 
 ---
-*작성일: 2025년 7월 30일*date = '2025-07-30T15:53:07+09:00'
-draft = false
-title = 'GitHub Actions 자동 배포 시스템 테스트'
-description = 'LLM Knowledge Archive 블로그의 자동 배포 시스템을 테스트해보았습니다.'
-tags = ['test', 'github-actions', 'automation']
-categories = ['general']
-+++
+*작성일: 2025년 7월 30일*
